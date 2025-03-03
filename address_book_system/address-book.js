@@ -12,6 +12,7 @@ class AddressBook{
         this.email = email;
     }
 
+    //u2
     #validate(...args){
         let validateName = /^[A-Z]+[a-zA-Z]{2,}$/
         let validateAddress = /[A-Za-z0-9]{4,}/
@@ -33,8 +34,9 @@ class AddressBook{
     }
 }
 
+//uc-3
+const addressBooks = [];
+function addAddressBooks(addressBook){
+    addressBooks.push(addressBook);
+}
 
-
-let book = new AddressBook("First","Last","Address","City","State","100 000","1000000000","okx@okok.com");
-
-console.log(book);
