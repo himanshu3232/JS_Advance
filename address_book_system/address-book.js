@@ -36,7 +36,7 @@ class AddressBook{
 }
 
 //uc-3
-const addressBooks = [];
+let addressBooks = [];
 function addAddressBooks(addressBook){
     addressBooks.push(addressBook);
 }
@@ -49,5 +49,10 @@ function updateAddressBook(firstName, updateAddressBook){
             return;
         }
     }
+}
+
+//uc-5
+function deleteAddressBook(firstName){
+    addAddressBooks = addressBooks.filter(addressBook => addressBook.firstName !== firstName);
 }
 
