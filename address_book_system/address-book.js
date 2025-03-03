@@ -89,5 +89,18 @@ function getCountByState(state){
 
 //uc11
 function sortAddressBooksByName(){
-    addressBooks.sort((a,b) => a.name[0] - b.name[0]);
+    addressBooks.sort((a,b) => a.name.localCompare(b.name));
+}
+
+//uc12
+function sortByCity(){
+    addAddressBooks.sort((a,b) => a.city.localCompare(b.city))
+}
+
+function sortByState(){
+    addressBooks.sort((a,b) => a.state.localCompare(b.state))
+}
+
+function sortByZip(){
+    addressBooks.sort((a,b) => a.zip.localCompare(b.zip))
 }
