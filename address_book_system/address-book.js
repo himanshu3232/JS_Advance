@@ -56,3 +56,8 @@ function deleteAddressBook(firstName){
     addAddressBooks = addressBooks.filter(addressBook => addressBook.firstName !== firstName);
 }
 
+//uc6
+function getNumberOfContacts(){
+    return addressBooks.reduce((length,_) => length+1,0)
+}
+
