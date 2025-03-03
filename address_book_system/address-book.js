@@ -66,3 +66,12 @@ function removeDuplicates(){
     let uniqueAddressBooks = [...new Set(addressBooks)];
     addressBooks = uniqueAddressBooks;
 }
+
+//uc8
+function findByCity(city){
+    return addressBooks.filter(addressBook => addressBook.city === city);
+}
+
+function findByState(state){
+    return addressBooks.filter(addressBook => addressBook.state === state);
+}
