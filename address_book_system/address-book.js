@@ -61,3 +61,8 @@ function getNumberOfContacts(){
     return addressBooks.reduce((length,_) => length+1,0)
 }
 
+//uc7
+function removeDuplicates(){
+    let uniqueAddressBooks = [...new Set(addressBooks)];
+    addressBooks = uniqueAddressBooks;
+}
