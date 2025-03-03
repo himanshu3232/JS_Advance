@@ -86,3 +86,8 @@ function getCountByCity(city){
 function getCountByState(state){
     return findByState(state).length;
 }
+
+//uc11
+function sortAddressBooksByName(){
+    addressBooks.sort((a,b) => a.name[0] - b.name[0]);
+}
