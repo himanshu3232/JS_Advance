@@ -1,7 +1,8 @@
 //create a new class Address Book with appropriate fields and export it
-
-export class AddressBook{
+class AddressBook{
     constructor(firstName, lastName, address, city, state, zip, phoneNumber, email){
+        let regex = /^[A-Z]+[a-zA-Z]{2,}/
+        if(!regex.test(firstName) || !regex.test(lastName)) throw new Error(`Invalid first or last name: ${firstName} ${lastName}`);
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -12,3 +13,7 @@ export class AddressBook{
         this.email = email;
     }
 }
+
+let book = new AddressBook("abcd","zyx",1,1,1,1,1,1);
+
+console.log(book);
