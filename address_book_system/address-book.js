@@ -78,3 +78,11 @@ function findByState(state){
 
 //uc9 same as uc8
 
+//uc10
+function getCountByCity(city){
+    return findByCity(city).length;
+}
+
+function getCountByState(state){
+    return findByState(state).length;
+}
