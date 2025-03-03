@@ -12,6 +12,7 @@ class AddressBook{
         this.email = email;
     }
 
+
     //u2
     #validate(...args){
         let validateName = /^[A-Z]+[a-zA-Z]{2,}$/
@@ -38,5 +39,15 @@ class AddressBook{
 const addressBooks = [];
 function addAddressBooks(addressBook){
     addressBooks.push(addressBook);
+}
+
+//uc-4
+function updateAddressBook(firstName, updateAddressBook){
+    for(let addressBook of addressBooks){
+        if(addressBook.firstName === firstName){
+            Object.assign(addressBook, updateAddressBook);
+            return;
+        }
+    }
 }
 
