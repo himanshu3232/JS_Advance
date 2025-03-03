@@ -1,4 +1,4 @@
-//UC-1
+//UC-2
 let regex = /^[ 0-9]{6,}$/
 const PIN_CODE = "400 088"
 
